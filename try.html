@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Blood Smear Classification</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .left-column, .right-column {
+      flex: 1;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      padding: 20px;
+    }
+
+    .image-container {
+      max-width: 100%;
+      height: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px;
+    }
+
+    .image-container img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="left-column">
+      <h2>Upload Blood Smear Image</h2>
+      <input type="file" id="fileInput" />
+    </div>
+    <div class="right-column">
+      <h2>Classification Results</h2>
+      <p>No image uploaded yet</p>
+    </div>
+  </div>
+  <div class="image-container">
+    <!-- The uploaded image will be displayed here -->
+  </div>
+</body>
+</html>

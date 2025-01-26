@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALL Classification</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='styles.css')}}">
+  <script src="{{url_for('static',filename='script.js')}}" defer></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="{{ url_for('static', filename='logo1.png') }}" alt="Logo">
+    </div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#classification">Classification</a></li>
+        <li><a href="#model">Model</a></li>
+        <li><a href="#about">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home" class="home-section">
+    <div class="home-content">
+      <div class="home-text">
+        <h1>Acute Lymphoblastic Leukemia (ALL)</h1>
+        <p>
+          Acute Lymphoblastic Leukemia (ALL) is a fast-progressing blood cancer 
+          that affects white blood cells. It commonly impacts children and young 
+          adults but can occur at any age. The disease disrupts normal blood cell 
+          production, leading to symptoms like fatigue, infections, and bleeding. 
+          Early diagnosis and stage classification are critical for timely and effective treatment.
+        </p>
+      </div>
+      <div class="home-image">
+        <img src="{{ url_for('static', filename='home1.jpg') }}" alt="Leukemia Awareness">
+      </div>
+    </div>
+  </section>
+
+  <!-- Model Section -->
+  <section id="model" class="model-section">
+    <div class="model-content">
+      <div class="model-text">
+        <h2>Model Information</h2>
+        <p>
+          Our deep learning model classifies ALL into distinct stages—Benign, Early, Pre, and Pro—helping healthcare 
+          professionals make informed decisions. This tool demonstrates the power of AI in enhancing diagnostic accuracy 
+          and saving lives.
+        </p>
+        <h3>Performance Metrics:</h3>
+        <ul>
+          <li>Overall Accuracy: 98.16%</li>
+          <li>Benign: Precision 96%, Recall 94.74%</li>
+          <li>Early: Precision 97.28%, Recall 96.62%</li>
+          <li>Pre: Precision 100%, Recall 100%</li>
+          <li>Pro: Precision 98.37%, Recall 100%</li>
+        </ul>
+      </div>
+      <div class="model-image">
+        <img src="{{ url_for('static', filename='model1.png') }}" alt="Model Visualization">
+      </div>
+    </div>
+  </section>
+
+  <!-- Classification Section -->
+<section id="classification">
+  <h2>Classification</h2>
+  <div class="classification-container">
+    <!-- Left Column: Upload Blood Smear Image -->
+    <div class="classification-column">
+      <h3>Upload Blood Smear Image</h3>
+      <form id="upload-form">
+        <input type="file" id="image-upload" accept="image/*">
+        <button type="submit">Upload</button>
+      </form>
+    </div>
+
+    <!-- Right Column: Classification Results -->
+    <div class="classification-column">
+      <h3>Classification Results</h3>
+      <p id="results-placeholder">No image uploaded yet.</p>
+    </div>
+  </div>
+
+  <!-- Image Preview Container -->
+  <div class="image-preview-container">
+    <h3>Uploaded Image</h3>
+    <div class="image-preview-box">
+      <p id="preview-placeholder">No image uploaded yet.</p>
+    </div>
+  </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about">
+  <h2>About Us</h2>
+  <div class="about-section">
+    <!-- Left Profile -->
+    <div class="profile">
+      <img src="{{ url_for('static', filename='Rohitpic.png') }}" alt="Rohit">
+      <p><strong>Name:</strong> Rohit Negi</p>
+      <p><strong>College:</strong> GEHU, Dehradun</p>
+      <p><strong>Course:</strong> B.Tech (CSE)</p>
+      <p><strong>Email:</strong> <a href="mailto:rohitnegi1719@gmail.com">rohitnegi1719@gmail.com</a></p>
+    </div>
+
+    <!-- Vertical Separator -->
+    <div class="separator"></div>
+
+    <!-- Right Profile -->
+    <div class="profile">
+      <img src="{{ url_for('static', filename='Utkarshpic.jpg') }}" alt="Utkarsh">
+      <p><strong>Name:</strong> Utkarsh Gupta</p>
+      <p><strong>College:</strong> GEHU, Dehradun</p>
+      <p><strong>Course:</strong> B.Tech (CSE)</p>
+      <p><strong>Email:</strong> <a href="mailto:utkarshgupta2430@gmail.com">utkarshgupta2430@gmail.com</a></p>
+    </div>
+  </div>
+</section>
+
+
+  <footer>
+    <p>&copy; 2025 ALL Classification Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>
