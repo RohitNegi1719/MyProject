@@ -1,1 +1,5 @@
+# Ignore all .h5 files
 *.h5
+
+# Ignore the virtual environment directory
+myenv/
