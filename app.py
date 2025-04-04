@@ -13,7 +13,7 @@ def index():
 
 @app.route('/upload', methods=['POST'])
 def upload_image():
-    file = request.files['file']  # Just get the file, no checking
+    file = request.files['file']  
 
     filepath = os.path.join('static/uploads', file.filename)
     os.makedirs('static/uploads', exist_ok=True)
